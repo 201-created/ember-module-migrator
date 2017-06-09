@@ -1,8 +1,18 @@
 module.exports = {
   src: {
+    data: {
+      application: {
+        'model.js': '//app model ss',
+        'adapter.js': '// app adapter ss',
+      },
+      post: {
+        'model.js': 'import ApplicationModel from "../application/model";',
+        'adapter.js': 'import ApplicationAdapter from "../application/adapter";',
+      }
+    },
     ui: {
       routes: {
-        'application.js': 'import NestedUtil from "my-app/src/ui/utils/nested/util"; import SingleUtil from "my-app/src/ui/utils/single";',
+        'application.js': 'import NestedUtil from "../../utils/nested/util"; import SingleUtil from "../../utils/single";',
         'index.js': 'import ApplicationRoute from "./application";',
         post: {
           'index.js': 'import ApplicationRoute from "../application";'
