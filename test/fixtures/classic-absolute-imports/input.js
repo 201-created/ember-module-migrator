@@ -1,11 +1,18 @@
 module.exports = {
   app: {
+    models: {
+      'post.js': '// post'
+    },
+    adapters: {
+      'application.js': '// application adapter',
+      'post.js': 'import ApplicationAdapter from "my-app/adapters/application";'
+    },
     utils: {
       'nested.js': 'nested util',
       'single.js': 'single util'
     },
     routes: {
-      'application.js': 'import NestedUtil from "my-app/app/utils/nested"; import SingleUtil from "my-app/app/utils/single";'
+      'application.js': 'import NestedUtil from "my-app/utils/nested"; import SingleUtil from "my-app/utils/single";'
     }
   },
   tests: {
